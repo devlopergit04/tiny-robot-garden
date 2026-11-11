@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320" role="img" aria-label="A tiny robot waters a sprout under a starry sky">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="1" stop-color="#2a2f6b"/>
+    </linearGradient>
+    <mask id="crescent">
+      <rect x="0" y="0" width="900" height="320" fill="#fff"/>
+      <circle cx="768" cy="60" r="30" fill="#000"/>
+    </mask>
+    <g id="sprout">
+      <path d="M0 0 C-2 -14 2 -24 0 -36" stroke="#4caf6a" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <ellipse cx="-9" cy="-20" rx="9" ry="4.5" fill="#5fcf80" transform="rotate(-30 -9 -20)"/>
+      <ellipse cx="9" cy="-27" rx="9" ry="4.5" fill="#5fcf80" transform="rotate(30 9 -27)"/>
+    </g>
+  </defs>
+
+  <rect width="900" height="320" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#ffffff">
+    <circle cx="60" cy="40" r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="75" r="1.2"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="220" cy="30" r="2"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="310" cy="64" r="1.3"><animate attributeName="opacity" values="1;0.2;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="380" cy="28" r="1.7"><animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="470" cy="52" r="1.2"><animate attributeName="opacity" values="1;0.3;1" dur="3.2s" repeatCount="indefinite"/></circle>
+    <circle cx="540" cy="22" r="2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle cx="620" cy="80" r="1.4"><animate attributeName="opacity" values="1;0.2;1" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="660" cy="36" r="1.6"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="850" cy="110" r="1.5"><animate attributeName="opacity" values="1;0.2;1" dur="3.8s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="30" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="120" r="1.3"><animate attributeName="opacity" values="1;0.2;1" dur="3.1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- moon -->
+  <circle cx="752" cy="70" r="34" fill="#f6edc3" mask="url(#crescent)">
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- title -->
+  <text x="40" y="108" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace" font-size="34" font-weight="700" fill="#f3f6ff">tiny-robot-garden
+    <animate attributeName="opacity" values="0;1" dur="1.6s" fill="freeze"/>
+  </text>
+  <text x="42" y="138" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#aab6e8">a robot, a few seeds, and a very patient night
+    <animate attributeName="opacity" values="0;0;1" keyTimes="0;0.5;1" dur="2.4s" fill="freeze"/>
+  </text>
+
+  <!-- hills -->
+  <path d="M0 240 C150 205 300 238 450 228 C600 218 750 244 900 226 L900 320 L0 320 Z" fill="#14302b"/>
+  <path d="M0 276 C150 266 300 282 450 274 C600 266 750 280 900 270 L900 320 L0 320 Z" fill="#0f241f"/>
+
+  <!-- fireflies -->
+  <circle r="3" fill="#fff6a8">
+    <animateMotion dur="9s" repeatCount="indefinite" path="M180 230 C220 190 290 210 330 180 S260 150 180 230"/>
+    <animate attributeName="opacity" values="0.15;1;0.15" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2.5" fill="#fff6a8">
+    <animateMotion dur="11s" repeatCount="indefinite" path="M620 215 C660 175 740 200 780 170 S700 140 620 215"/>
+    <animate attributeName="opacity" values="1;0.15;1" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#fff6a8">
+    <animateMotion dur="13s" repeatCount="indefinite" path="M60 200 C100 160 160 190 200 150 S120 120 60 200"/>
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- background sprouts -->
+  <g transform="translate(150 280)"><g>
+    <animateTransform attributeName="transform" type="scale" values="0.7;1.1;0.7" dur="6s" repeatCount="indefinite"/>
+    <use href="#sprout"/><circle cx="0" cy="-40" r="6" fill="#ffb3c7"/><circle cx="0" cy="-40" r="2.5" fill="#ffd166"/>
+  </g></g>
+  <g transform="translate(260 282)"><g>
+    <animateTransform attributeName="transform" type="scale" values="0.9;0.6;0.9" dur="5s" repeatCount="indefinite"/>
+    <use href="#sprout"/><circle cx="0" cy="-40" r="6" fill="#c3a6ff"/><circle cx="0" cy="-40" r="2.5" fill="#ffd166"/>
+  </g></g>
+  <g transform="translate(650 280)"><g>
+    <animateTransform attributeName="transform" type="scale" values="0.6;1;0.6" dur="7s" repeatCount="indefinite"/>
+    <use href="#sprout"/><circle cx="0" cy="-40" r="6" fill="#ffd166"/><circle cx="0" cy="-40" r="2.5" fill="#ff8a5b"/>
+  </g></g>
+  <g transform="translate(770 278)"><g>
+    <animateTransform attributeName="transform" type="scale" values="1;0.65;1" dur="5.5s" repeatCount="indefinite"/>
+    <use href="#sprout"/><circle cx="0" cy="-40" r="6" fill="#ff9fb2"/><circle cx="0" cy="-40" r="2.5" fill="#ffd166"/>
+  </g></g>
+
+  <!-- focus sprout being watered -->
+  <g transform="translate(509 278)"><g>
+    <animateTransform attributeName="transform" type="scale" values="0.5;1.3;0.5" dur="6s" repeatCount="indefinite"/>
+    <use href="#sprout"/><circle cx="0" cy="-40" r="6" fill="#7fd0ff"/><circle cx="0" cy="-40" r="2.5" fill="#ffd166"/>
+  </g></g>
+
+  <!-- Bolt the robot -->
+  <g transform="translate(430 274) scale(0.9)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0 0;0 -3;0 0" dur="2s" repeatCount="indefinite"/>
+
+      <!-- legs and feet -->
+      <rect x="-24" y="-22" width="14" height="22" rx="4" fill="#4a5a6a"/>
+      <rect x="10" y="-22" width="14" height="22" rx="4" fill="#4a5a6a"/>
+      <rect x="-28" y="-6" width="22" height="8" rx="4" fill="#2b3a4a"/>
+      <rect x="6" y="-6" width="22" height="8" rx="4" fill="#2b3a4a"/>
+
+      <!-- left arm -->
+      <rect x="-46" y="-86" width="10" height="38" rx="5" fill="#6f9cc6" stroke="#2b3a4a" stroke-width="2"/>
+
+      <!-- body -->
+      <rect x="-34" y="-92" width="68" height="72" rx="12" fill="#8fb8de" stroke="#2b3a4a" stroke-width="3"/>
+      <rect x="-20" y="-76" width="40" height="24" rx="6" fill="#2b3a4a"/>
+      <circle cx="-10" cy="-64" r="3.5" fill="#7cffb2"><animate attributeName="fill" values="#7cffb2;#2b3a4a;#7cffb2" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="0" cy="-64" r="3.5" fill="#ffd166"><animate attributeName="fill" values="#2b3a4a;#ffd166;#2b3a4a" dur="1.2s" repeatCount="indefinite"/></circle>
+      <circle cx="10" cy="-64" r="3.5" fill="#ff6b6b"><animate attributeName="fill" values="#ff6b6b;#2b3a4a;#ff6b6b" dur="1.7s" repeatCount="indefinite"/></circle>
+      <rect x="-14" y="-44" width="28" height="6" rx="3" fill="#6f9cc6"/>
+
+      <!-- neck and head -->
+      <rect x="-8" y="-98" width="16" height="8" fill="#4a5a6a"/>
+      <rect x="-32" y="-142" width="64" height="46" rx="14" fill="#a9cdea" stroke="#2b3a4a" stroke-width="3"/>
+      <rect x="-25" y="-134" width="50" height="30" rx="9" fill="#16202c"/>
+      <ellipse cx="-12" cy="-120" rx="6" ry="6" fill="#7cffb2">
+        <animate attributeName="ry" values="6;6;0.8;6" keyTimes="0;0.9;0.95;1" dur="4s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse cx="12" cy="-120" rx="6" ry="6" fill="#7cffb2">
+        <animate attributeName="ry" values="6;6;0.8;6" keyTimes="0;0.9;0.95;1" dur="4s" repeatCount="indefinite"/>
+      </ellipse>
+      <path d="M-6 -109 Q0 -104 6 -109" stroke="#7cffb2" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+      <!-- antenna -->
+      <line x1="0" y1="-142" x2="0" y2="-158" stroke="#2b3a4a" stroke-width="3"/>
+      <circle cx="0" cy="-162" r="5" fill="#ffd166">
+        <animate attributeName="fill" values="#ffd166;#ff6b6b;#ffd166" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- right arm with watering can -->
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 41 -86;-14 41 -86;0 41 -86" dur="3s" repeatCount="indefinite"/>
+        <rect x="36" y="-86" width="10" height="36" rx="5" fill="#6f9cc6" stroke="#2b3a4a" stroke-width="2"/>
+        <path d="M48 -58 Q56 -74 64 -58" stroke="#7a3b2c" stroke-width="3" fill="none"/>
+        <rect x="44" y="-58" width="24" height="18" rx="4" fill="#e07a5f" stroke="#7a3b2c" stroke-width="2"/>
+        <path d="M68 -52 L86 -64" stroke="#e07a5f" stroke-width="5" stroke-linecap="round"/>
+      </g>
+
+      <!-- water drops -->
+      <g fill="#7fd0ff">
+        <circle cx="90" cy="-62" r="2.5"><animate attributeName="cy" values="-62;6" dur="1.2s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.2s" repeatCount="indefinite"/></circle>
+        <circle cx="92" cy="-62" r="2.5"><animate attributeName="cy" values="-62;6" dur="1.2s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.2s" begin="0.4s" repeatCount="indefinite"/></circle>
+        <circle cx="88" cy="-62" r="2.5"><animate attributeName="cy" values="-62;6" dur="1.2s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;1;0" keyTimes="0;0.8;1" dur="1.2s" begin="0.8s" repeatCount="indefinite"/></circle>
+      </g>
+    </g>
+  </g>
+</svg>
