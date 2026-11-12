@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 40" width="900" height="40" role="img" aria-label="An animated growing vine divider">
+  <path d="M0 20 C75 4 150 36 225 20 S375 4 450 20 S600 36 675 20 S825 4 900 20" fill="none" stroke="#4caf6a" stroke-width="3" stroke-linecap="round" stroke-dasharray="960" stroke-dashoffset="960">
+    <animate attributeName="stroke-dashoffset" values="960;0;0;960" keyTimes="0;0.5;0.9;1" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <g fill="#5fcf80">
+    <ellipse cx="112" cy="12" rx="9" ry="4" transform="rotate(-30 112 12)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.15;0.25;0.9;1" dur="7s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="337" cy="12" rx="9" ry="4" transform="rotate(30 337 12)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.3;0.4;0.9;1" dur="7s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="562" cy="28" rx="9" ry="4" transform="rotate(30 562 28)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.4;0.5;0.9;1" dur="7s" repeatCount="indefinite"/></ellipse>
+    <ellipse cx="787" cy="12" rx="9" ry="4" transform="rotate(-30 787 12)" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.45;0.5;0.9;1" dur="7s" repeatCount="indefinite"/></ellipse>
+  </g>
+  <circle cx="450" cy="20" r="6" fill="#ffd166" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.25;0.35;0.9;1" dur="7s" repeatCount="indefinite"/>
+  </circle>
+</svg>
